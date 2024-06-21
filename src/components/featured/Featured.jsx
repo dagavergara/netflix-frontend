@@ -26,7 +26,7 @@ export default function Featured({ type }) {
         </div>
       )}
       <img
-        src="https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        src="https://images.alphacoders.com/106/thumb-1920-1069116.jpg"
         alt=""
       />
       <div className="info">

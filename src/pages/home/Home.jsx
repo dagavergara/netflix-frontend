@@ -1,8 +1,8 @@
 import Navbar from "../../components/navbar/Navbar";
 import Featured from "../../components/featured/Featured";
 import "./home.scss";
-import Slider from '../../components/NetflixSlider/Slider'
-
+import List from "../../components/list/List";
+import Footer from "../../components/footer/Footer"
 const Home = () => {
   const movies = [
     {
@@ -42,15 +42,14 @@ const Home = () => {
       title: 'Black mirror'
     }
   ];
+  
   return (
     <div className="home">
       <Navbar />
       <Featured />
-      <Slider>
-        {movies.map(movie => (
-          <Slider movie={movie} key={movie.id}>Seguir viendo</Slider>
-        ))}
-      </Slider>
+      <List movies = {movies} />
+      <List movies = {movies} />
+      <Footer/>
     </div>
   );
 };
